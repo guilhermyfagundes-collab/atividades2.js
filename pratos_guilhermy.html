@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratos</title>
+</head>
+
+<body>
+    <h1>Escolha seu Prato😁😁</h1>
+    <button onclick="Prato()">Clique e escolha seu Prato</button>
+    <div id="resultado"></div>
+
+    <script>
+        function Prato() {
+            let prato = prompt("Qual Prato você gostaria de comer:  Pizza / Hamburguer / Sushi / Salada");
+
+            switch (prato) {
+                case "Pizza":
+                    document.write("Você pediu uma Pizza");
+                    break;
+                case "Hamburguer":
+                    document.write(" Você pediu um Hamburguer");
+                    break;
+                case "Sushi":
+                    document.write("Você pediu um Sushi");
+                    break;
+                case "Salada":
+                    document.write("Você pediu uma Salada");
+                    break;
+                default:
+                    document.write("Seu Prato não foi registrado")
+                    break;
+            }
+        }
+    </script>
+
+</body>
+</html>
